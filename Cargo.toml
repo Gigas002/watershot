@@ -31,4 +31,4 @@ regex = "1"
 hyprland = { git = "https://github.com/hyprland-community/hyprland-rs" }
 strum = { version = "0", features = ["derive", "strum_macros"] }
 
-libwayshot = { git = "https://github.com/Gigas002/wayshot", branch = "bump-deps" }
+libwayshot = { git = "https://github.com/Gigas002/wayshot", branch = "freeze-feat-andreas" }

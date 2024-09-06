@@ -145,7 +145,7 @@ fn gui(args: &Args) -> Option<DynamicImage> {
     event_queue.roundtrip(&mut runtime_data).unwrap();
 
     loop {
-        event_queue.blocking_dispatch(&mut runtime_data).unwrap();
+        event_queue.dispatch_pending(&mut runtime_data).unwrap();
         match runtime_data.exit {
             ExitState::ExitOnly => return None,
             ExitState::ExitWithSelection(rect) => {
